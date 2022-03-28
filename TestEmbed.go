@@ -14,12 +14,16 @@ func (me * animal) info(){
 	fmt.Printf("I have %v leg(s)\n", me.leg)
 }
 
+func (me * animal) work(){
+	fmt.Printf("I can't work\n")
+}
+
 type people struct{
 	animal	
 }
 
 func (me * people) work(){
-	fmt.Printf("I can work with my %v legs", me.leg)
+	fmt.Printf("I can work with my %v legs\n", me.leg)
 }
 
 func main(){
@@ -28,6 +32,8 @@ func main(){
 		leg:4}
 	
 	pig.info()
+	
+	pig.work()
 	
 
 	/*p1 := people{
