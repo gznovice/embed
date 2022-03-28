@@ -19,7 +19,7 @@ type people struct{
 }
 
 func (me * people) work(){
-	fmt.Println("I can work")
+	fmt.Printf("I can work with my %v legs", me.leg)
 }
 
 func main(){
